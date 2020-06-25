@@ -53,5 +53,17 @@ namespace Calculator.Tests
             Assert.AreEqual(3, result);
         }
 
+        [TestMethod]
+        [DataRow(1, 4, 5)]
+        [DataRow(-8, -5, -13)]
+        [DataRow(10, -14, -4)]
+        [DataRow(-4, 12, 8)]
+        public void Calc_Sum(int x, int y, int expected)
+        {
+            var calc = new Calc();
+
+            Assert.AreEqual(expected, calc.Sum(x, y));
+        }
+
     }
 }
