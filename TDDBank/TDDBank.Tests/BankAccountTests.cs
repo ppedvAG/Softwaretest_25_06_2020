@@ -6,12 +6,6 @@ namespace TDDBank.Tests
     [TestFixture]
     public class BankAccountTests
     {
-        //- Kontostand abfragen
-        //- Betrag einzahlen(nicht Negativ)
-        //- Betrag abheben(nicht Negativ)
-        //- Darf nicht unter 0 fallen
-        //- Neues Konto hat 0 als Kontostand
-
 
         [Test]
         public void BankAccount_new_Account_should_have_zero_balance()
