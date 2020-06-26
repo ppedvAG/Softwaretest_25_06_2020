@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Microsoft.QualityTools.Testing.Fakes;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,10 +51,31 @@ namespace TDDBank.Tests
 
         [Test]
         public void OpeningHours_IsNowOpen()
-        { 
+        {
             var oh = new OpeningHours();
 
-            Assert.IsFalse(oh.IsNowOpen());
+            using (ShimsContext.Create())
+            {
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2020, 6, 22, 10, 29, 0);
+                Assert.IsFalse(oh.IsNowOpen());
+                System.Fakes.ShimDateTime.NowGet = () => new DateTime(2020, 6, 22, 10, 30, 0);
+                Assert.IsTrue(oh.IsNowOpen());
+            }
+        }
+
+        [Test]
+        public void Fakes_File_Exists()
+        {
+            using (ShimsContext.Create())
+            {
+                var rsult = System.IO.File.Exists("k:\\dieseDateiIstNichtDa.txt");
+                Assert.IsFalse(rsult);
+
+                System.IO.Fakes.ShimFile.ExistsString = pfad => true;
+
+                rsult = System.IO.File.Exists("k:\\dieseDateiIstNichtDa.txt");
+                Assert.IsTrue(rsult);
+            }
         }
 
 
