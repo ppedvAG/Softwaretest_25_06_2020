@@ -9,6 +9,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Spendors.Data.EF", "Spendor
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Spendors.Data.EF.Tests", "Spendors.Data.EF.Tests\Spendors.Data.EF.Tests.vbproj", "{F4B5313E-72DB-484F-8F1F-75AB83C3D1D9}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Spendors.UI.WinForms", "Spendors.UI.WinForms\Spendors.UI.WinForms.vbproj", "{2414BE1D-10EC-4F66-AF1A-699AE185E985}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Spendors.UI.WinForms.Tests", "Spendors.UI.WinForms.Tests\Spendors.UI.WinForms.Tests.vbproj", "{7B1735F1-1F85-4563-8462-33471F002F17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F4B5313E-72DB-484F-8F1F-75AB83C3D1D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4B5313E-72DB-484F-8F1F-75AB83C3D1D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4B5313E-72DB-484F-8F1F-75AB83C3D1D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2414BE1D-10EC-4F66-AF1A-699AE185E985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2414BE1D-10EC-4F66-AF1A-699AE185E985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2414BE1D-10EC-4F66-AF1A-699AE185E985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2414BE1D-10EC-4F66-AF1A-699AE185E985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1735F1-1F85-4563-8462-33471F002F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1735F1-1F85-4563-8462-33471F002F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1735F1-1F85-4563-8462-33471F002F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1735F1-1F85-4563-8462-33471F002F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
