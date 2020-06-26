@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BankAccount.cs" />
+    <Compile Include="HalloDelegates.cs" />
     <Compile Include="OpeningHours.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

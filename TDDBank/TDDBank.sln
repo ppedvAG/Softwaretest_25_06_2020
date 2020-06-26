@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDBank", "TDDBank\TDDBank.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDBank.Tests", "TDDBank.Tests\TDDBank.Tests.csproj", "{1436093E-287D-459A-AA19-BF993F08DB21}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TDDBank.VBTests", "TDDBank.VBTests\TDDBank.VBTests.vbproj", "{CDE8C71D-A8E1-4A0B-ACD9-D485D1E0A0BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1436093E-287D-459A-AA19-BF993F08DB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1436093E-287D-459A-AA19-BF993F08DB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1436093E-287D-459A-AA19-BF993F08DB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE8C71D-A8E1-4A0B-ACD9-D485D1E0A0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE8C71D-A8E1-4A0B-ACD9-D485D1E0A0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE8C71D-A8E1-4A0B-ACD9-D485D1E0A0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE8C71D-A8E1-4A0B-ACD9-D485D1E0A0BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

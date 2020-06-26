@@ -56,11 +56,17 @@ namespace TDDBank.Tests
 
             using (ShimsContext.Create())
             {
+                System.Fakes.ShimDateTime.NowGet = GetTestDatum;
                 System.Fakes.ShimDateTime.NowGet = () => new DateTime(2020, 6, 22, 10, 29, 0);
                 Assert.IsFalse(oh.IsNowOpen());
                 System.Fakes.ShimDateTime.NowGet = () => new DateTime(2020, 6, 22, 10, 30, 0);
                 Assert.IsTrue(oh.IsNowOpen());
             }
+        }
+
+        private DateTime GetTestDatum()
+        {
+          return new DateTime(2020, 6, 22, 10, 29, 0);
         }
 
         [Test]
